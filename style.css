@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body * {
+  outline: 1px solid pink;
+} */
+
+:root {
+  /* colors */
+  --cream: rgb(244, 221, 188);
+  --pink: rgb(233, 107, 91);
+  --red: rgb(228, 60, 57);
+  --lght-blue: rgb(88, 118, 142);
+  --drk-blue: rgb(12, 49, 81);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  text-transform: lowercase;
+  background-color: var(--cream);
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center {
+  margin: 0px auto 20px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 600px;
+  position: relative;
+}
+
+.bar {
+  height: 2px;
+  background-color: var(--lght-blue);
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.btn {
+  text-transform: lowercase;
+  background: var(--drk-blue);
+  border: none;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--cream);
+  transition: transform 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btns-container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+}
+
+.month {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  background: var(--lght-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--cream);
+  font-size: 0.75rem;
+}
+
+.month.add-border {
+  border: 5px solid var(--pink);
+}
+
+img {
+  width: 650px;
+  height: auto;
+  display: none;
+  margin-bottom: 50px;
+}
+
+img.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--pink);
+  letter-spacing: 15px;
+}
